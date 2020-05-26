@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>秦之风影院登录</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="css/homepage.css">	
+</head>
+
+<script>
+
+function login(){
+	var form=document.getElementById("form1");
+	var account=document.getElementById("account");
+	var password=document.getElementById("password");
+	var type=document.getElementById("type");
+	
+	if(account.value==""||account.value===null){
+		alert("账号不能为空");
+		console.log("账号为空");
+		return;
+	}
+	if(account.value.length < 6||account.value.length > 8){
+		alert("账号应为6到8位数");
+		console.log("账号位数不合法");
+		return;
+	}
+	if(isNaN(account.value)){
+		alert("账号请输入数字");
+		console.log("账号非全数字");
+		return;
+	}
+
+    if(password.value==""||password.value===null){
+		alert("密码不能为空");
+		console.log("账号为空")
+		return;
+	}
+	if(password.value.length < 6){
+		alert("密码错误：密码少于6位数")
+		console.log("账号密码少于六位")
+	}
+	
+	var item =null;
+    var obj=document.getElementsByName("choice_user");
+	console.log("0000000000000");
+    console.log(obj);
+
+    for(var i=0;i<obj.length;i++){
+    	if(obj[i].checked){
+    		item=obj[i].value;
+    		if(item==0){
+    	    var url = "UserSearch";
+    		req = new XMLHttpRequest();
+    		if (req) {
+    			//采用POST方式，异步传输
+    			req.open("post", url, true);
+    			//POST方式，必须加入如下头信息设定
+    			req.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+
+    			req.onreadystatechange = checkComplete;
+
+    			var data = "type=" + type.value + "&account=" + account.value + "&password=" + password.value;
+    			console.log(type.value);
+    			console.log(account.value);
+    			console.log(password.value);
+    			console.log(data);
+
+    			req.send(data);
+    			}
+    	}
+    	else if(item==1){
+    	    var url = "EmployeeSearch";
+    		req = new XMLHttpRequest();
+    		if (req) {
+    			//采用POST方式，异步传输
+    			req.open("post", url, true);
+    			//POST方式，必须加入如下头信息设定
+    			req.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+    			
+    			req.onreadystatechange = checkComplete;
+
+    			var data = "type=" + type.value + "&account=" + account.value + "&password=" + password.value;
+    			req.send(data);
+    			}
+    		}
+		}
+	}
+}
+	function checkComplete() {
+		if (req.readyState == 4 && req.status == 200) {
+			console.log(req.responseText);
+			if(req.responseText==="error")
+			{
+				alert("账号或密码错误");
+			}
+			else if(req.responseText==="success")
+			{
+				alert("登录成功");
+				window.location.href='main.html';
+			}
+			else if(req.responseText==="null"){
+				alert("账号不存在");
+			}
+		 }
+}
+</script>
+
+<body style="background:#fbfbfb;padding-top:100px;">
+<div class="bfb tc"><img src="images/aoligei.jpg"></div>
+<form id="form1" method="post" >
+<input type="hidden" id="type" value="login" name="method">
+
+<div align="center">
+<input type="radio" value="0" name="choice_user" id="user" checked>
+<label for="user">用户</label>
+<input type="radio" value="1" name="choice_admin" id="employee">
+<label for="employee">管理员</label>
+</div>
+ 
+ <div class="login_page">
+	  <div class="bfb tc pst">
+	    <input style="border-radius:4px 4px 0 0;
+			width:100%;
+			margin:0;
+			height:45px;
+			padding:10px 8px" 
+			class="form-control login_line"
+ 			name="loginInfo.nick" 
+			id="account" 
+			maxlength="8"
+			type="account" 
+			placeholder="账户" >
+	    <div class="login_prompt fs14" id="nickMsg"  style="display:none;"></div>
+	  </div>
+
+	  <div class="bfb tc pst">
+	    <input style="border-radius:0 0 4px 4px;width:100%;
+margin:0;
+height:45px;
+padding:10px 8px" class="form-control" name="loginInfo.password" id="password" type="password"
+			   placeholder="密码" >
+	  <div class="login_prompt fs14" id="passwordMsg" style="display:none;"></div>
+	  </div>
+	  
+
+	<div class="bfb tc">
+	    <button type="button" class="btn btn-primary login_signin" onclick="login()"/>
+	    立即登录
+	    </button>
+	  </div>
+
+
+	<div class="bfb tc">
+	<a href="signup.html">
+	    <button type="button" class="btn btn-primary login_registered" />
+	    注册账号
+	    </button>
+   	</a>
+	  </div>
+	  
+	  <div class="bfb tc lh30 fs14 cl4 login_page_input">
+	    <div class="fl"></div>
+	    <div class="fr"><a href="forget.html">忘记密码</a></div>
+	  </div>
+	  
+</div>
+ </form>
+
+<div class="bfb tc fs14 login_footer"> Copyright @2020 秦之风剧院</div>
+</body>
+</html>

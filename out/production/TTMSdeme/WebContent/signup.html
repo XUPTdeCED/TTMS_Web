@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>注册</title>
+</head>
+
+<style type="text/css">
+    table{width:25%;height:200px;}
+    td{text-align:center;}
+</style>
+
+<style>
+body{background-size:100% 100%;background-attachment:fixed;}
+</style>
+
+
+<script type="text/javascript">
+function re(){
+	window.location.href='index.html';
+}
+	
+
+
+function verify(){
+    var form=document.getElementById("form1");
+	var username=document.getElementById("username");
+	var account=document.getElementById("account");
+	var password1=document.getElementById("password1");
+	var password2=document.getElementById("password2");
+	var type=document.getElementById("type");
+
+	if(username.value==""||username.value===null){
+		alert("用户名不能为空");
+		return;
+	}
+	if(account.value==""||account.value===null){
+		alert("账号不能为空");
+		return;
+	}
+	if(account.value.length < 6||account.value.length > 8){
+		alert("账号应为6到8位数");
+		return;
+	}
+	if(isNaN(account.value)){
+		alert("账号请输入数字");
+		return;
+	}
+    if(password1.value==""||password1.value===null){
+		alert("密码不能为空");
+		return;
+	}
+	if(password1.value.length < 6){
+		alert("密码数应大于6位")
+	}
+	if(password1.value!=password2.value){
+		alert("前后密码不一致");
+		return;
+	}
+    	    var url = "UserUpdate";
+    		req = new XMLHttpRequest();
+    		if (req) {
+    			//采用POST方式，异步传输
+    			req.open("post", url, true);
+    			//POST方式，必须加入如下头信息设定
+    			req.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+    			req.onreadystatechange = checkComplete;
+    			var data = "type=" + type.value + "&username=" + username.value + "&account=" + account.value + "&password=" + password2.value;
+    			req.send(data);
+    			}					
+}
+	function checkComplete() {
+		if (req.readyState == 4 && req.status == 200) {
+			// alert(req.responseText);
+			if(req.responseText==="success")
+			{
+				alert("注册成功");
+				console.log("注册成功")
+				window.location.href='login.html';
+			}else if(req.responseText==="repeat"){
+				alert("账号重复");
+				console.log("账号重复")
+				return;
+			}else if(req.responseText==="failed"){
+				alert("账号注册失败");
+				console.log("账号注册失败")
+				return;
+			}}}
+</script>
+
+
+<body background="images/bg.jpg">
+<center>
+<form method="post" id="form1" name="form1">
+<input type="hidden" id="type" value="add" name="method">
+    
+<h1>注册</h1>
+
+    <table border="0px">
+    
+         <tr>        
+            <td>
+                姓&nbsp;名：
+                <input type="user" name="username" id="username"  size="24" maxlength="11" placeholder="用户名小于11位数"> 
+            </td>
+        </tr>
+        <tr>
+            <td>
+                账&nbsp;号：
+                <input type="account" name="account" id="account" size="24" placeholder="请输入6到8位数字">
+            </td>
+        </tr>
+        <tr>    
+            <td>
+                密&nbsp;码：
+                <input type="password1" name="password" id="password1" size="24"placeholder="密码数应大于6位">
+            </td>
+        </tr>
+        <tr>        
+            <td>
+                确认密码：<input type="password2" name="password" id="password2" placeholder="请确认密码相同">
+            </td>
+        </tr>
+
+        <tr>    
+            <td align="center">
+                <input type="button" onclick="verify()" value="注册"/>&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="button" onclick="re()" value="返回"/>
+            </td>            
+        </tr>
+
+    </table>
+</form>
+<!--    <footer class="footer">西安邮电大学 计算机学院</footer>-->
+</center>
+</body>
+</html>
