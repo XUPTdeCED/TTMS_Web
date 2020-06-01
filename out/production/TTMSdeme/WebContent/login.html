@@ -64,6 +64,8 @@ function login(){
     			console.log(account.value);
     			console.log(password.value);
     			console.log(data);
+
+    			// @ResponseBody
     			req.send(data);
     			}
     	}
@@ -143,19 +145,15 @@ padding:10px 8px" class="form-control" name="loginInfo.password" id="password" t
 	  
 
 	<div class="bfb tc">
-	    <button type="button" class="btn btn-primary login_signin" onclick="login()"/>
-	    立即登录
-	    </button>
-	  </div>
+	    <button type="button" class="btn btn-primary login_signin" onclick="login()">立即登录</button>
+	</div>
 
 
 	<div class="bfb tc">
-	<a href="signup.html">
-	    <button type="button" class="btn btn-primary login_registered" />
-	    注册账号
-	    </button>
-   	</a>
-	  </div>
+		<a href="signup.html">
+			<button type="button" class="btn btn-primary login_registered">注册账号</button>
+   		</a>
+	</div>
 	  
 	  <div class="bfb tc lh30 fs14 cl4 login_page_input">
 	    <div class="fl"></div>

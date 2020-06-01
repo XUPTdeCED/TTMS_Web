@@ -1,12 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ebe72eb0-e19c-482d-8c0a-56d16eeeb418" name="Default Changelist" comment="" />
+    <list default="true" id="ebe72eb0-e19c-482d-8c0a-56d16eeeb418" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/TTMSdeme.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/TTMSdeme.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/WebContent/detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/detail_play.html" beforeDir="false" afterPath="$PROJECT_DIR$/WebContent/detail_play.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/WebContent/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/WebContent/main.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/studio.html" beforeDir="false" afterPath="$PROJECT_DIR$/WebContent/studio.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TTMSdeme/.idea/TTMSdeme.iml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TTMSdeme/.idea/TTMSdeme.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TTMSdeme/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TTMSdeme/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TTMSdeme/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TTMSdeme/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TTMSdeme/WebContent/detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TTMSdeme/WebContent/detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TTMSdeme/WebContent/detail_play.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TTMSdeme/WebContent/detail_play.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TTMSdeme/WebContent/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TTMSdeme/WebContent/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TTMSdeme/WebContent/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TTMSdeme/WebContent/main.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TTMSdeme/WebContent/studio.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TTMSdeme/WebContent/studio.html" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="CED" />
+      </list>
+    </option>
+    <option name="PUSH_TAGS">
+      <GitPushTagMode>
+        <option name="argument" value="--tags" />
+        <option name="title" value="All" />
+      </GitPushTagMode>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="G:\IDEA workplace\TTMSdeme\.idea" />
+      </set>
+    </option>
   </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
@@ -16,17 +53,18 @@
     <option name="CUSTOM_FILTER" />
   </component>
   <component name="ProjectId" id="1cLmsBuzbDgjik6En8GUUgF3qt6" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1590213672747" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/WebContent/images" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../LearningTest" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="MTConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -133,11 +171,49 @@
       <workItem from="1590316454094" duration="938000" />
       <workItem from="1590317537042" duration="2075000" />
       <workItem from="1590367620896" duration="17501000" />
-      <workItem from="1590456707695" duration="950000" />
+      <workItem from="1590456707695" duration="12180000" />
+      <workItem from="1590542860851" duration="4751000" />
+      <workItem from="1590628971480" duration="649000" />
+      <workItem from="1590642348736" duration="2638000" />
+      <workItem from="1590663926454" duration="386000" />
+      <workItem from="1590664340263" duration="155000" />
+      <workItem from="1590664543945" duration="2328000" />
+      <workItem from="1590666902299" duration="2939000" />
+      <workItem from="1590715581877" duration="1927000" />
+      <workItem from="1590718849818" duration="3797000" />
+      <workItem from="1590850493140" duration="498000" />
+      <workItem from="1590886940115" duration="9305000" />
+      <workItem from="1590974097833" duration="1218000" />
     </task>
+    <task id="LOCAL-00001" summary=" 第二天：login.html:68 404 (Not Found)">
+      <created>1590503480929</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1590503480930</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value=" login.html:68 404 (Not Found)" />
+    <MESSAGE value=" 第二天：login.html:68 404 (Not Found)" />
+    <option name="LAST_COMMIT_MESSAGE" value=" 第二天：login.html:68 404 (Not Found)" />
   </component>
 </project>
